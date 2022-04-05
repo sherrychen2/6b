@@ -1,0 +1,342 @@
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/homework_6a/images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header2 {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo2 {
+    color: #8C1A11;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo {
+    color: #fff;
+    font-size: 14px;
+}
+
+.cmu-link {
+    background: #fff;
+    color: #8C1A11;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cmu-link2 {
+    background: #8C1A11;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.location {
+    padding: 0 7%;
+}
+
+.date {
+    padding: 0 7%;
+}
+
+.time {
+    padding: 0 7%;
+}
+
+.header h1 {
+    font-size: 3vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+}
+
+.header h2 {
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    display: inline;
+    justify-content: space-between;
+}
+
+/* Search Box */
+.product-search {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 14px;
+    margin: 0 auto;
+    box-shadow: rgba(0,0,0,.172549) 0 6px 12px 0;
+    cursor: pointer;
+}
+
+.product-search1 {
+    background: white;
+    border-radius: 14px;
+    margin: 0 auto;
+    box-shadow: rgba(0,0,0,.172549) 0 6px 12px 0;
+    cursor: pointer;
+}
+
+/* Search Elements */
+.search-element {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    border-right: 2px solid rgba(10,10,10,.1);
+    padding: 1em;
+}
+
+.search-label {
+    font-weight: 700;
+}
+  
+.search-input {
+    border: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 5px;
+}
+  
+.search-input:focus {
+    box-shadow: 0px 2px 0px 0px 8C1A11;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+  
+/* Button After */
+.dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+  
+/* Hover Button */
+.dd-button:hover {
+    background-color: #eeeeee;
+}
+  
+/* Input for Button */
+.dd-input {
+    display: none;
+}
+  
+
+/* Menu for Button */
+.dd-menu {
+    position: absolute;
+    top: 100%;
+    border-radius: 5px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    background-color: #ffffff;
+    list-style-type: none;
+}
+  
+.dd-input + .dd-menu {
+    display: none;
+} 
+  
+.dd-input:checked + .dd-menu {
+    display: block;
+} 
+  
+.dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+  
+.dd-menu li:hover {
+    background-color: #f6f6f6;
+}
+  
+.dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+}
+  
+.dd-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.925rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.search-button {
+    display: inline-block;
+    flex-grow: 1;
+    padding: 0 2em;
+    text-align: center;
+    font-size: 0.925rem;
+    font-weight: bold;
+    border: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: #0081B3;
+    transition: background-color 0.8s ease;
+}
+
+.container1 {
+    width: 80%;
+    margin: auto;
+    max-width: 796px;
+} 
+    
+.time-inner {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+      
+.time-box {
+    color: #0081B3;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 14px;
+}
+    
+.time-title {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+/* w3school css input boxes https://www.w3schools.com/css/css_form.asp */
+input[type=text], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container3 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    background:#ccc;
+    color:cornflowerblue;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container1{
+    margin: auto;
+    margin-top: 20px;
+    /* border: 3px solid black; */
+}
+
+.sty{
+    font-size: 18px !important;
+    color: rgb(255, 255, 255) !important;
+}
+.num{
+    width: 80px;
+    height: 30px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+.uk-border-circle{
+    width: 100px !important;
+    height: 100px !important;
+}
+.fa-cart-arrow-down{
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+}
